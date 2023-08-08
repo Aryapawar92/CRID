@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    >
+    <script
+      src="https://kit.fontawesome.com/57b10b301b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Lobster&family=Lora:ital@0;1&family=Noto+Serif:ital@1&family=Roboto+Serif:ital,opsz,wght@1,8..144,100&family=Roboto+Slab&family=Source+Sans+Pro:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Rgit Crid</title>
+    <link rel="shortcut icon" type="image" href="./images/newcrid.png">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+   
+    html,body{
+      display: grid;
+      height: 100%;
+      width: 100%;
+      place-items: center;
+      
+    }
+    .wrapper{
+      display: flex;
+      justify-content: center;
+    
+    }
+    .wrapper .button{
+      display: inline-block;
+      height: 60px;
+      width: 60px;
+    border: 1px solid white;
+      margin: 0 5px;
+      overflow: hidden;
+      background: #091921;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+      transition: all 0.3s ease-out;
+    }
+    .wrapper .button:hover{
+      width: 200px;
+    }
+    a{
+      color: black;
+    }
+    .wrapper .button .icon{
+      display: inline-block;
+      height: 60px;
+      width: 60px;
+      text-align: center;
+      border-radius: 50px;
+      box-sizing: border-box;
+      line-height: 60px;
+      transition: all 0.3s ease-out;
+      
+    }
+   
+    .wrapper .button:nth-child(1):hover .icon{
+      background: #E1306C;
+    }
+    .wrapper .button:nth-child(2):hover .icon{
+      background: #2267C3;
+    }
+    .wrapper .button:nth-child(3):hover .icon{
+      background: #ff0000;
+    }
+    .wrapper .button:nth-child(4):hover .icon{
+      background: #5865F2;
+    }
+    .wrapper .button .icon i{
+      font-size: 25px;
+      line-height: 60px;
+      transition: all 0.3s ease-out;
+    }
+    .wrapper .button:nth-child(1):hover .icon i{
+      background: #E1306C;
+      color: #fff
+    }
+    .wrapper .button:nth-child(2):hover .icon i{
+      
+      background: #2267C3;
+      color: #fff;
+    }
+    .wrapper .button:nth-child(3):hover .icon i{
+      background: #ff0000;
+      color: #fff;
+    }
+    .wrapper .button:nth-child(4):hover .icon i{
+      background: #5865F2;
+      color: #fff;
+    }
+   
+    .wrapper .button span{
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 60px;
+      margin-left: 10px;
+      transition: all 0.3s ease-out;
+    }
+   
+   
+    .wrapper .button:nth-child(1) span{
+      color: #E1306C;
+      
+    }
+    .wrapper .button:nth-child(2) span{
+      color: #2267C3;
+    }
+    .wrapper .button:nth-child(3) span{
+      color: #ff0000;
+    }
+    .wrapper .button:nth-child(4) span{
+      color: #5865F2;
+    }
+     </style>
+  </head>
+  <body>
+    <script
+      src="https://kit.fontawesome.com/14f5cf4f5a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.14.0/dist/sweetalert2.all.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <nav class="navbar fixed-top navbar-expand-lg" id="nav">
+        
+            <img src="./images/crid logo12-removebg.png" alt="Crid websites's logo"class="logo"/>
+       
+        <button class="navbar-toggler" style="background-color: white;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          
+            <i class="fas fa-bars" id="hamburger_navbar"></i>
+         
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link nav_link" href="/">Home<span class="sr-only">(current)</span></a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#members">Meet Our Team</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#events">Events</a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            
+          </ul>
+        </div>
+    </nav>
+    <div>
+
+      <h2 class="aboutUs" >About Us</h2>
+      <div class="aim1 container d-flex justify-content-center">
+        <div class="row">
+          <div class="aim col-md-6 center" style="padding-top: 40px" id="about--text1">
+            CRID( Centre for Reforming Intelligence through Data Science) aims to bridge the gap between
+            academic excellence and practical exposure. It will help to explore each and  very member to 
+            learn something new, which not only help them in the academics but to be the better version of
+            themselves. It will play a significant role in bridging the gap by establishing a strong 
+            teaching and research environment by organizing various activities such as webinars, seminars,
+            and workshops to ensure that everyone had a holistic perspective of the real world and develop
+            themselves in accordance with industrial norms. CRID will encourage each member to thrive as an 
+            employee, entrepreneurs, and competent professionals
+          </div>
+          <div class="aim col-md-6 center" id="about--video">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+              src="https://assets2.lottiefiles.com/packages/lf20_rdsqlthv.json"
+              background="#CAF0F8"
+              speed="1"
+              class="images"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
+        </div>
+      </div>
+
+
+    <!--Timeline of events-->
+      <div id="events">
+        <h2 class="aboutUs" >Events</h2>
+        
+        <ul class="timeline">
+          <li>
+            <details class="panel">
+              <img class="event-img" src="images/football crid event.jpeg" >
+              <summary>Football Premier League</summary>
+              <div class="date">21 SEP 2022</div>
+              <p>Congratulations On securing second place in the football premier league! Your Hardwork and dedication have paid off. We are proud of you!!  </p>
+            </details>
+          </li>
+          <li>
+            <details class="panel">
+              <img class="event-img" src="images/crid inaggaration.jpeg" >
+              <summary>CRID Inauguration</summary>
+              <div class="date">7 OCT 2022</div>
+              <p>Congratulations on a successful inauguration! Wishing you continued success in your future endeavors.</p>
+            </details>
+          </li> 
+          <li>
+            <details class="panel">
+              <img class="event-img" src="images/web dev.webp" >
+              <summary>Web Development Bootcamp </summary>
+              <div class="date">30 jan 2022</div>
+              <p>CRID in collaboration With ABIT successfully conducted a two day bootcamp on "Web Development"
+                Thank to Every for making it a great success!!
+              </p>
+            </details>
+          </li>
+          <li>
+            <details class="panel">
+              <img class="event-img" height="650px" src="images/power BI.webp" >
+              <summary>Microsoft Power BI</summary>
+              <div class="date">9 feb 2023</div>
+              <p>We are excited to share the success of our recent Microsoft Power BI event! Attendees learned from
+                 expert speakers, networked with peers, and gained valuable insights on the latest trends and best practices
+                 in Power BI.</p>
+            </details>
+          </li>
+        </ul>
+      </div>
+
+
+     <!--Magazine-->
+     <div class="magazine">
+      <div class="page">
+        <img src="images/center-image.jpg" alt="Image 1">
+      </div>
+      <div class="page">
+        <img src="images/left-image.jpg" alt="Image 2">
+      </div>
+    </div>
+    <div class="download-container">
+      <a href="magazines/SCIPIA First edition.pdf" class="download-button">Download PDF</a>
+    </div>
+
+
+     
+    <div>
+      <h2 >Meet Our Team</h2>
+      <br>
+      <br>
+      <div id="members">
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="profile-img/Atharv.jpg" alt="Team member avatar">
+            <h3>Atharv Naik</h3>
+            <p>President</p>
+          </div>
+          <div class="team-member">
+            <img id="imgposition" src="profile-img/Gayatri Gunjal.jpg" alt="Team member avatar">
+            <h3>Gayatri Gunjal</h3>
+            <p>General Secretary</p>
+          </div>
+          <div class="team-member">
+            <img src="profile-img/smith.jpg" alt="Team member avatar">
+            <h3>Smith Mankar</h3>
+            <p>Vice President</p>
+          </div>
+          <!-- Add more team member cards here -->
+          <div class="team-member">
+            <img id="imgposition" src="profile-img/Sarib Siddiqui.jpg" alt="Team member avatar">
+            <h3>Sarib Siddiqui</h3>
+            <p>Vice President</p>
+          </div>
+          <div class="team-member">
+            <img  id="imgposition" src="profile-img/Gargi Fadtare.jpg" alt="Team member avatar">
+            <h3>Gargi Fadtare</h3>
+            <p>Treasurer</p>
+          </div>
+          <div class="team-member">
+            <img src="profile-img/Pranay Khuspe.jpg" alt="Team member avatar">
+            <h3>Pranay Khushpe</h3>
+            <p>Associate General Secretary</p>
+          </div>
+          
+          <div class="team-member">
+            <img src="profile-img/Ant.jpeg" alt="Team member avatar">
+            <h3>Antarishka Dhanure</h3>
+            <p>Publicity Secretary</p>
+          </div>
+          
+
+          <div class="team-member">
+            <img src="profile-img/Saad Shiekh.jpg" alt="Team member avatar">
+            <h3>Saad shaikh</h3>
+            <p>Operational Secretary</p>
+          </div>
+
+          <div class="team-member">
+            <img src="profile-img/Arpit Mohankar.jpg" alt="Team member avatar">
+            <h3>Arpit Mohankar</h3>
+            <p>Web Master</p>
+          </div>
+
+          <div class="team-member">
+            <img src="profile-img/Arya.jpeg" alt="Team member avatar">
+            <h3>Arya Pawar</h3>
+            <p>Web Master</p>
+          </div>
+          <div class="team-member">
+            <img src="profile-img/khushi.jpeg" alt="Team member avatar">
+            <h3>Khushi Singh</h3>
+            <p>Content and Editorial secretary</p>
+          </div>
+
+          <div class="team-member">
+            <img id="imgposition" src="profile-img/sid2.jpeg" alt="Team member avatar">
+            <h3>Sidarth Salian</h3>
+            <p>Marketing Secretary</p>
+          </div>
+
+          <div class="team-member">
+            <img id="imgposition" src="profile-img/riya.JPG" alt="Team member avatar">
+            <h3>Riya Memdani</h3>
+            <p>Marketing Secretary</p>
+          </div>  
+
+          <div class="team-member">
+            <img id="imgposition" src="profile-img/Dishan Shettigar.jpg" alt="Team member avatar">
+            <h3>Aishwarya Nagapure</h3>
+            <p>Digital Creative Secretary</p>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <!--timeline-->
+    
+    <!--footer-->
+      <footer class="footer">
+           
+  
+            <div class="about-us-div">
+              <h2  class="about-us">About Us</h2>
+              <div class="para-wrapper">
+              <p  class="about-para">
+                A community for the students, by the students, and of the
+                students! We’re here to provide you with all the resources
+                you’ll require in your journey, and mentor you to become the
+                best of the best.
+              </p>
+            </div>
+            </div>
+           
+          </div>
+          
+          <div id="contact">
+          <div class="wrapper" >
+            <div class="button">
+               <div class="icon">
+              <a  target="_blank" href="https://www.instagram.com/crid.rgit/"> <i class="fab fa-instagram"></i>
+              </a> 
+              </div>
+               <span>Instagram</span>
+            </div>
+            <div class="button">
+               <div class="icon">
+                 <a target="_blank" href="https://www.linkedin.com/company/rgit-crid/" > <i class="fab fa-linkedin-in"></i>
+                 </a>       </div>
+               <span>LinkedIn</span>
+            </div>
+            <div class="button">
+               <div class="icon">
+                  <a target="_blank" href="https://www.youtube.com/channel/UCXfiWj-tDcKS9L9ERW6MEAg"><i class="fab fa-youtube" style="color: #ff0000;"></i>
+                  </a>
+                  </div>
+               <span>YouTube</span>
+            </div>
+            <div class="button">
+              <div class="icon">
+                 <a target="_blank" href="https://discord.gg/rM8EnRNcYR"><i class="fab fa-discord" style="color: #5865F2;"></i>
+                 </a>
+                </div>
+              <span>Discord</span>
+           </div>
+         </div>
+
+          
+          </footer>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+      const tl = gsap.timeline();
+
+      tl.from('#about--video', {
+        y: 100,
+        opacity: 0,
+        duration: 1
+      })
+      .from('#about--text1', {
+        x: -100,
+        opacity: 0,
+        duration: 1
+      })
+      .from('#about--text', {
+        scrollTrigger: '#about--text',
+        x: -100,
+        opacity: 0,
+        duration: 1
+      })
+
+      gsap.from('#text', {
+        scrollTrigger: '#text',
+        x: -100,
+        opacity: 0,
+        stagger: .2,
+        duration: 1
+      })
+
+
+      gsap.from('#team--list', {
+        scrollTrigger: {
+          trigger: '#team--list',
+          toggleActions: "restart none none none"
+        },
+        y: 200,
+        opacity: 0,
+        stagger: .2,
+        duration: 1
+      })
+    </script>
+  </body>
+</html>
